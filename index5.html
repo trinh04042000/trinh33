@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var n = parseInt(prompt('Enter n:'));
+    var f0 = 0;
+    var f1 = 1;
+    var f2;
+    var sum = 1;
+    for (i = 0; i < n - 2; i++) {
+        f2 = f1 + f0;
+        f0 = f1;
+        f1 = f2;
+        sum +=f2;
+        document.write(f2 + ' , ');
+    }
+    document.write("</br>" + "Tổng = " + sum);
+</script>
+</body>
+</html>

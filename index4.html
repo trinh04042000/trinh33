@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var n = parseInt(prompt('Enter n:'));
+    var f0 = 0;
+    var f1 = 1;
+    var f2;
+    for (i = 0; i < n - 2; i++) {
+        f2 = f1 + f0;
+        f0 = f1;
+        f1 = f2;
+        if (f2 % 5 === 0) {
+            alert ("Số đầu tiên chia hết cho 5: " + f2);
+            break;
+        }
+
+    }
+</script>
+</body>
+</html>
